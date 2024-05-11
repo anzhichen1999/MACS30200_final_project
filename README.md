@@ -8,7 +8,7 @@ This research project explores the framing of poverty alleviation in the "People
 
 1. What are the underlying development ideas, and how does People’s Daily uphold them in its reports on poverty alleviation?
 2. What frames are used to discuss poverty alleviation, and how are they employed by People’s Daily in its reporting?
-3. What changes and continuities in terms of development ideas or frames of poverty alleviation are reflected in the party paper’s reports on poverty?
+3. What is the gap between People's Daily's report and the actual data and what might be the cause?
 
 ## File Explanation
 
@@ -51,9 +51,6 @@ Dr Jia's comment: How to measure frame?
 
 Response: Aas mentioned in the big picture assignment, the frames are extracted from UN sustainable development on poverty reductioin and alleviation. We will apply it here.
 
-
-**RQ3**
-
 Graph 4 - Dual Y-Axis Line Graph:
 
 A line graph with two Y-axes to compare the trajectory of two major themes or frames over
@@ -72,9 +69,19 @@ themes or frames across the entire datase by count co-occurrences of themes in t
 articles. Each theme is a node on the circumference of a circle, and chords connecting the
 nodes represent the strength of their co-occurren
 
+**RQ3:**
 
+Graph 6 - Bar Graphs for Comparative Analysis:
+
+We then use side-by-side or stacked bar graphs to compare the frequency and type of themes or frames used in People's Daily articles against actual data on poverty alleviation over the same periods. This visual can effectively show discrepancies and align with trends.
+
+Graph 7 - Scatter Plot with Trend Lines:
+
+Plot People's Daily coverage (e.g., number of articles or intensity of coverage) on one axis against actual poverty alleviation data (like poverty rates or government spending on poverty) on the other axis for each year. Add trend lines for each dataset to visualize divergence or convergence over time.
 
 ## Requirements
+
+By
 
 - **Python Version:** 3.12.0
 - **Required Libraries and Packages:** For a complete list of required libraries and their versions, please refer to the `requirements.txt` file in this repository.
