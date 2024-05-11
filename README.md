@@ -41,8 +41,6 @@ Dr Jia's comment: decision tree map can be hard to identify.
 
 Response: Yes probably my intial thoughts were too ideal and naive. However as I put in the method part in previous weeks, this part was conducted through neural networks. I though that myybe I could use ecision trees from Neural Network output to approximate the complex decision surface of a neural network with more interpretable models. 
 
-**RQ2:**
-
 Graph 3 - Line Chart
 
 It should be able to calculate the annual frequency of each frame from 1979 to 2023 year by year, and different color should represent different frame. Similar to the next graph, this time gives an overall change pattern. However we should notice the difference between proportion and number: as the number of poverty alleviation articles increase per year, the raw number may not be able to reflect the actual intention of the policy makers, nor will it reflect which frame plays a more important role.
