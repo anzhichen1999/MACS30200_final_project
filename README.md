@@ -15,6 +15,13 @@ This research project explores the framing of poverty alleviation in the "People
 1. /Data: The full data of People's Daily articles from year 1989, and its word embeddingds downlowded from Dr Jia's social science cluster. In the following study, we will expand this database from year 1989 to the full coverage of study. Since the nature of this repo is to serve a researc proporsal, so we will only attach a sample for demonstratiion purposes.
 2. /Results: Visulizations and graphs for results will be saved here.
 3. /Scripts: Code.
+4. /Model: Model used for this code, which will be explained below.
+
+## Model
+
+1. Grave, E., Bojanowski, P., Gupta, P., Joulin, A., & Mikolov, T. (2018). Learning word vectors for 157 languages. In Proceedings of the International Conference on Language Resources and Evaluation (LREC 2018).
+
+A word embedding model for Chinese language.
 
 
 ## Findings
@@ -29,7 +36,7 @@ Through high frequency word extraction, topic modeling and clustering, and polic
 
 Dr Jia's comment: How do you identify them? 
 
-Reponse: I have manually labelled 1,000 articles, as mentioned in week 3 assignment. In real research, I will expand the number of labeling. Also as I mentioned in the feasibility check, I can use the already labeled news articles to fine-tune an NLP, which ideally would be able to learn the nuances and specific contexts relevant to the themes of poverty reduction such as labor intensiveness and collective efforts, or to identify specific terminology and concepts that are not as common in general datasets that pre-trained models are usually trained on.
+Reponse: I have manually labelled 100 articles, as mentioned in week 3 assignment. In real research, I will expand the number of labeling to fine-tune the NLP model. Also as I mentioned in the feasibility check, I can use the already labeled news articles to fine-tune an NLP, which ideally would be able to learn the nuances and specific contexts relevant to the themes of poverty reduction such as labor intensiveness and collective efforts, or to identify specific terminology and concepts that are not as common in general datasets that pre-trained models are usually trained on.
 
 **RQ2:**
 
@@ -79,10 +86,12 @@ Plot People's Daily coverage (e.g., number of articles or intensity of coverage)
 
 ## Requirements
 
-By
-
-- **Python Version:** 3.12.0
+- **Python Version:** 3.11.5
 - **Required Libraries and Packages:** For a complete list of required libraries and their versions, please refer to the `requirements.txt` file in this repository.
+
+## Citation
+
+Anzhi, C. (2024). Media Framing of Poverty Alleviation in China: A Textual Analysis of "People's Daily". Version 1.0. University of Chicago. https://github.com/anzhichen1999/MACS30200_final_project.git
 
 ### Installation
 
@@ -92,6 +101,4 @@ To install required Python packages, run the following command in your environme
 pip install -r requirements.txt
 
 
----
 
-This README.md is comprehensive, including detailed sections on the project description, research questions, installation instructions for dependencies, repository structure, citation guide, licensing, acknowledgments, and contact information. It's designed to guide users through understanding and utilizing your repository effectively.
