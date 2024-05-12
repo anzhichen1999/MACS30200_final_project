@@ -8,7 +8,7 @@ This research project explores the framing of poverty alleviation in the "People
 
 1. What are the underlying development ideas, and how does People’s Daily uphold them in its reports on poverty alleviation?
 2. What frames are used to discuss poverty alleviation, and how are they employed by People’s Daily in its reporting?
-3. What is the gap between People's Daily's report and the actual data and what might be the cause?
+3. What is the gap between People's Daily's report and the party's documents?
 
 ## File Explanation
 
