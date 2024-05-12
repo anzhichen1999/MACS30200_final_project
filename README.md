@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This research project explores the framing of poverty alleviation in the "People's Daily," the official newspaper of the Communist Party of China. Utilizing a corpus of approximately 5,000 articles from 1979 to 2023 related to poverty reduction, this study identifies and analyzes the underlying development ideas and the frames of poverty alleviation. The project employs deductive content analysis methods to track the continuity and change in poverty alleviation discourse, providing insights into how media frames might influence public perceptions and policy directions in the context of China's evolving economic policies and social dynamics.
+This research project explores the framing of poverty alleviation in the "People's Daily," the official newspaper of the Communist Party of China. Utilizing a corpus of approximately 15,000 articles from 1980 to 2023 (inferred by a sample of 5,000 articles from yeaar 1985-1995) related to poverty reduction, this study identifies and analyzes the underlying development ideas and the frames of poverty alleviation. The project employs deductive content analysis methods to track the continuity and change in poverty alleviation discourse, providing insights into how media frames might influence public perceptions and policy directions in the context of China's evolving economic policies and social dynamics.
 
 ## Research Questions
 
