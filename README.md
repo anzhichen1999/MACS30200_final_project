@@ -86,11 +86,8 @@ nodes represent the strength of their co-occurren
 
 Graph 6 - Bar Graphs for Comparative Analysis:
 
-We then use side-by-side or stacked bar graphs to compare the frequency and type of themes or frames used in People's Daily articles against actual data on poverty alleviation over the same periods. This visual can effectively show discrepancies and align with trends.
+We then use side-by-side or stacked bar graphs to compare the frequency and type frames used in People's Daily articles against documents on poverty alleviation over the same periods. This visual can effectively show discrepancies and align with trends.
 
-Graph 7 - Scatter Plot with Trend Lines:
-
-Plot People's Daily coverage (e.g., number of articles or intensity of coverage) on one axis against actual poverty alleviation data (like poverty rates or government spending on poverty) on the other axis for each year. Add trend lines for each dataset to visualize divergence or convergence over time.
 
 ## Requirements
 
