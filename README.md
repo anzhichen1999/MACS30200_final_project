@@ -21,7 +21,12 @@ This research project explores the framing of poverty alleviation in the "People
 
 1. Grave, E., Bojanowski, P., Gupta, P., Joulin, A., & Mikolov, T. (2018). Learning word vectors for 157 languages. In Proceedings of the International Conference on Language Resources and Evaluation (LREC 2018).
 
-A word embedding model for Chinese language.
+It is a word embedding model for Chinese language. However, it is about 7Gb. So I delete it from local machine and instead you may want to use the following code in the terminal to download it and store it in desired path.
+
+"
+wget https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.zh.300.bin.gz
+gzip -d cc.zh.300.bin.gz
+"
 
 
 ## Findings
