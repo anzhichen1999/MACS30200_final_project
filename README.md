@@ -13,7 +13,10 @@ This research project explores the framing of poverty alleviation in the "People
 ## File Explanation
 
 1. /Data: The full data of People's Daily articles from year 1989, and its word embeddingds downlowded from Dr Jia's social science cluster. In the following study, we will expand this database from year 1989 to the full coverage of study. Since the nature of this repo is to serve a researc proporsal, so we will only attach a sample for demonstratiion purposes.
-2. /Results: Visulizations and graphs for results will be saved here.
+
+    Notice: the preproced text has been removed as it is about size 1.1 GB. It is store in the following directory if you prefer to download it:"https://drive.google.com/file/d/1VZ6BHqBkjv2p8wgpspptiCfDQpKbkgI4/view?usp=sharing"
+
+2. /Results: Visulizations, produced results, and graphs will be saved here.
 3. /Scripts: Code.
 4. /Model: Model used for this code, which will be explained below.
 
