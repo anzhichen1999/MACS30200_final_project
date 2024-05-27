@@ -40,7 +40,13 @@ To be updated. This part will be done before this Sunday as I sent an email to D
 
 First a look at he frequency of percentages of articles related to pocverty reduction
 
- I apply GPT-Turbo-3.5 to perform genre detection for the following categories as mentioned in the previous part: Story of an Individual, Story of a Collective; Proganda Content without Statistics, Statistics Briefing. The following graph will show the distribution of each category in percentage of the total articles related to poverty reduction in each year. Again as mentioned before, one article can be in multiple genres. Below is the distribution of articles related to poverty reduction by genre from 1985 to 1995. The genres include Story of an Individual, Story of a Collective, Propaganda Content without Statistics, Statistics Briefing, and None.
+<img src = "./frequency_of_article.png">
+
+Meanwhile a quick look at the word cloud from the 10-year sample.
+
+<img src = "./wordcloud.png">
+
+After collecting these articles, I apply GPT-Turbo-3.5 to perform genre detection for the following categories as mentioned in the previous part: Story of an Individual, Story of a Collective; Proganda Content without Statistics, Statistics Briefing. The following graph will show the distribution of each category in percentage of the total articles related to poverty reduction in each year. Again as mentioned before, one article can be in multiple genres. Below is the distribution of articles related to poverty reduction by genre from 1985 to 1995. The genres include Story of an Individual, Story of a Collective, Propaganda Content without Statistics, Statistics Briefing, and None.
 
 ## Table: Distribution of Articles Related to Poverty Reduction by Genre (1985-1995)
 
@@ -58,7 +64,7 @@ First a look at he frequency of percentages of articles related to pocverty redu
 | 1994 | 16.56          | 13.92          | 27.84             | 36.88                   | 4.80     |
 | 1995 | 18.43          | 10.65          | 29.92             | 37.65                   | 3.35     |
 
-Based on these results, GPT-3.5 Turbo demonstrated a classification accuracy of 80\%, indicating a robust ability to correctly identify the genres compared to my manually coding result from the first 10 articles. This high level of accuracy underscores the model's utility in effectively distinguishing among different narrative styles within a highly specific dataset. The two instances where the model diverged from manual labeling suggest areas for further refinement as it fails to distinguish the story of a collective and a story of an individual. The table below shows the result of the first five articles from 1985.
+Based on these results, GPT-3.5 Turbo demonstrated a classification accuracy of 80%, indicating a robust ability to correctly identify the genres compared to my manually coding result from the first 10 articles. This high level of accuracy underscores the model's utility in effectively distinguishing among different narrative styles within a highly specific dataset. The two instances where the model diverged from manual labeling suggest areas for further refinement as it fails to distinguish the story of a collective and a story of an individual. The table below shows the result of the first five articles from 1985.
 
 ## Table: Comparison of GPT-Generated and Actual Genres for the First Five Articles of 1985
 
@@ -70,8 +76,27 @@ Based on these results, GPT-3.5 Turbo demonstrated a classification accuracy of 
 | What's the new central point in people's service in the new era?                                      | Collective; No Stats     | No Stats                 |
 | Weifang Military District Helps Rural Economic Reform                                                 | Collective; With Stats   | Collective; With Stats   |
 
+Below is a more thorough reflection of the genres.
+
+<img src = ".genres.png">
 
 **RQ2:**
+
+The chart bellow represent the probability of each article, however mocked-up.
+
+| Article | Have Rural Income | Village Social Agriculture | Support Social Urban | Weak Orphan Finance | Village Poverty Agriculture | Export Products Rural |
+|---------|-------------------|----------------------------|----------------------|---------------------|-----------------------------|-----------------------|
+| 1       | 0.1805            | 0.1285                     | 0.0851               | 0.0436              | 0.4139                      | 0.1484                |
+| 2       | 0.1316            | 0.0340                     | 0.1827               | 0.2507              | 0.2320                      | 0.1691                |
+| 3       | 0.0322            | 0.3074                     | 0.1861               | 0.3033              | 0.1610                      | 0.0099                |
+| 4       | 0.2520            | 0.0550                     | 0.2709               | 0.1350              | 0.1174                      | 0.1697                |
+| 5       | 0.1679            | 0.0093                     | 0.0073               | 0.2472              | 0.3992                      | 0.1692                |
+| 6       | 0.0680            | 0.1502                     | 0.2756               | 0.1980              | 0.1914                      | 0.1168                |
+| 7       | 0.1574            | 0.0820                     | 0.2634               | 0.1071              | 0.2912                      | 0.0989                |
+| 8       | 0.1275            | 0.2690                     | 0.1535               | 0.0366              | 0.2753                      | 0.1381                |
+| 9       | 0.2040            | 0.0632                     | 0.2157               | 0.1034              | 0.2491                      | 0.1646                |
+| 10      | 0.0943            | 0.2124                     | 0.0434               | 0.2732              | 0.1472                      | 0.2295                |
+
 
 
 
