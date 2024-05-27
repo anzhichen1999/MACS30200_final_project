@@ -30,8 +30,8 @@ wget https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.zh.300.bin.gz
 gzip -d cc.zh.300.bin.gz
 "
 
-2. A BERTopic Model. 
-
+2. A BERTopic Model. Attatched in the model section.
+   
 ## Findings
 
 To be updated. This part will be done before this Sunday as I sent an email to Dr.Jia indicating the incapability of doing producing actual results during the previous week. For convience, I have attacthed the mocked up result from the previous homework, with signficant revised contents based on Dr. Jia's comments; however, in the final version the content below will laargely be replaced by actual graphs.
@@ -78,7 +78,7 @@ Based on these results, GPT-3.5 Turbo demonstrated a classification accuracy of 
 
 Below is a more thorough reflection of the genres.
 
-<img src = ".genres.png">
+<img src = "./genres.png">
 
 **RQ2:**
 
@@ -116,6 +116,20 @@ To install required Python packages, run the following command in your environme
 
 ```bash
 pip install -r requirements.txt
+
+## Data Availability
+
+The following datasets were utilized in this study and are available for access upon request:
+
+- **People's Daily Corpus:** The complete corpus, including raw and tokenized texts, is hosted on Google Drive to ensure ease of access and sharing. To request access, please contact Anzhi Chen at `chenanzhi@uchicago.edu`. Specific file paths and instructions for downloading and accessing the data will be provided upon request.
+
+- **People's Daily Word Embedding:** The word embeddings derived from the corpus are stored on the Social Science Computing Cluster. This resource is managed to support rigorous computational research. Access can be granted through a formal request to Anzhi Chen at `chenanzhi@uchicago.edu` or to Dr. Jia, who oversees the computational resources. Please specify your affiliation and the intended use of the data in your request.
+
+- **Documents from the Chinese Communist Party (CCP):** Currently, the documents pertaining to official CCP communications and directives relevant to our research have not been downloaded and are not directly hosted by our team. For researchers interested in these documents, they can be accessed through the official CCP archive at the following URL: `[insert URL here]`. Please note that access to these documents may require specific permissions or compliance with the archive's usage policies.
+
+Each dataset has been curated with careful attention to detail, ensuring high-quality and reliable resources for academic and research purposes. For further information on the data formats, usage conditions, or assistance with access, please reach out to the contacts provided.
+
+
 
 
 
