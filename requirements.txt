@@ -3,5 +3,23 @@ pandas==1.2.4
 matplotlib==3.3.4
 nltk==3.5
 scikit-learn==0.24.1
-gensim>=4.0.0 
-numpy>=1.19.0  
+gensim>=4.0.0
+numpy>=1.19.0
+transformers
+torch
+bertopic
+safetensors
+datasets
+datashader
+adjustText
+nltk
+
+# NVIDIA CUDA libraries (adjust these according to your CUDA version)
+cudf-cu12
+dask-cudf-cu12
+cuml-cu12
+cugraph-cu12
+cupy-cuda12x
+
+# Installations from specific sources or versions
+bertopic @ git+https://github.com/MaartenGr/BERTopic.git@master
