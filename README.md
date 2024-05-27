@@ -97,6 +97,17 @@ The chart bellow represent the probability of each article, however mocked-up.
 | 9       | 0.2040            | 0.0632                     | 0.2157               | 0.1034              | 0.2491                      | 0.1646                |
 | 10      | 0.0943            | 0.2124                     | 0.0434               | 0.2732              | 0.1472                      | 0.2295                |
 
+## Data Availability
+
+The following datasets were utilized in this study and are available for access upon request:
+
+- **People's Daily Corpus:** The complete corpus, including raw and tokenized texts, is hosted on Google Drive to ensure ease of access and sharing. To request access, please contact Anzhi Chen at `chenanzhi@uchicago.edu`. Specific file paths and instructions for downloading and accessing the data will be provided upon request.
+
+- **People's Daily Word Embedding:** The word embeddings derived from the corpus are stored on the Social Science Computing Cluster. This resource is managed to support rigorous computational research. Access can be granted through a formal request to Anzhi Chen at `chenanzhi@uchicago.edu` or to Dr. Jia, who oversees the computational resources. Please specify your affiliation and the intended use of the data in your request.
+
+- **Documents from the Chinese Communist Party (CCP):** Currently, the documents pertaining to official CCP communications and directives relevant to our research have not been downloaded and are not directly hosted by our team. For researchers interested in these documents, they can be accessed through the official CCP archive at the following URL: `[insert URL here]`. Please note that access to these documents may require specific permissions or compliance with the archive's usage policies.
+
+Each dataset has been curated with careful attention to detail, ensuring high-quality and reliable resources for academic and research purposes. For further information on the data formats, usage conditions, or assistance with access, please reach out to the contacts provided.
 
 
 
@@ -117,17 +128,6 @@ To install required Python packages, run the following command in your environme
 ```bash
 pip install -r requirements.txt
 
-## Data Availability
-
-The following datasets were utilized in this study and are available for access upon request:
-
-- **People's Daily Corpus:** The complete corpus, including raw and tokenized texts, is hosted on Google Drive to ensure ease of access and sharing. To request access, please contact Anzhi Chen at `chenanzhi@uchicago.edu`. Specific file paths and instructions for downloading and accessing the data will be provided upon request.
-
-- **People's Daily Word Embedding:** The word embeddings derived from the corpus are stored on the Social Science Computing Cluster. This resource is managed to support rigorous computational research. Access can be granted through a formal request to Anzhi Chen at `chenanzhi@uchicago.edu` or to Dr. Jia, who oversees the computational resources. Please specify your affiliation and the intended use of the data in your request.
-
-- **Documents from the Chinese Communist Party (CCP):** Currently, the documents pertaining to official CCP communications and directives relevant to our research have not been downloaded and are not directly hosted by our team. For researchers interested in these documents, they can be accessed through the official CCP archive at the following URL: `[insert URL here]`. Please note that access to these documents may require specific permissions or compliance with the archive's usage policies.
-
-Each dataset has been curated with careful attention to detail, ensuring high-quality and reliable resources for academic and research purposes. For further information on the data formats, usage conditions, or assistance with access, please reach out to the contacts provided.
 
 
 
