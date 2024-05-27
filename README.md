@@ -6,9 +6,8 @@ This research project explores the framing of poverty alleviation in the "People
 
 ## Research Questions
 
-1. What are the underlying development ideas, and how does People’s Daily uphold them in its reports on poverty alleviation?
-2. What frames are used to discuss poverty alleviation, and how are they employed by People’s Daily in its reporting?
-3. What is the gap between People's Daily's report and the party's documents?
+1. To identify the change of frames used to discuss poverty alleviation, and how they are employed by People’s Daily in its reporting.
+2. To identify the narrative gap between People’s Daily’s reports and Communist Party of China’s documents circulated within the party.
 
 ## File Explanation
 
@@ -31,6 +30,7 @@ wget https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.zh.300.bin.gz
 gzip -d cc.zh.300.bin.gz
 "
 
+2. A BERTopic Model. 
 
 ## Findings
 
@@ -38,55 +38,42 @@ To be updated. This part will be done before this Sunday as I sent an email to D
 
 **RQ1:**
 
-Graph 1 - Stacked Area Chart: 
+First a look at he frequency of percentages of articles related to pocverty reduction
 
-Through high frequency word extraction, topic modeling and clustering, and policy analysis from actual accouncement, etc, we have developed different themes for development ideas. Ideally, how different development ideas (e g., economic growth, social equity, environmental sustainability) have been emphasized in People's Daily articles over time can be reflected through this stacked arrea chart. X-axis is the year, Y-axis is the number of articles.
+ I apply GPT-Turbo-3.5 to perform genre detection for the following categories as mentioned in the previous part: Story of an Individual, Story of a Collective; Proganda Content without Statistics, Statistics Briefing. The following graph will show the distribution of each category in percentage of the total articles related to poverty reduction in each year. Again as mentioned before, one article can be in multiple genres. Below is the distribution of articles related to poverty reduction by genre from 1985 to 1995. The genres include Story of an Individual, Story of a Collective, Propaganda Content without Statistics, Statistics Briefing, and None.
 
-Dr Jia's comment: How do you identify them? 
+## Table: Distribution of Articles Related to Poverty Reduction by Genre (1985-1995)
 
-Reponse: I have manually labelled 100 articles, as mentioned in week 3 assignment. In real research, I will expand the number of labeling to fine-tune the NLP model. Also as I mentioned in the feasibility check, I can use the already labeled news articles to fine-tune an NLP, which ideally would be able to learn the nuances and specific contexts relevant to the themes of poverty reduction such as labor intensiveness and collective efforts, or to identify specific terminology and concepts that are not as common in general datasets that pre-trained models are usually trained on.
+| Year | Individual (%) | Collective (%) | Without Stats (%) | Statistics Briefing (%) | None (%) |
+|------|----------------|----------------|-------------------|-------------------------|----------|
+| 1985 | 30.87          | 23.45          | 20.32             | 28.76                   | 0.60     |
+| 1986 | 25.23          | 25.78          | 16.89             | 30.45                   | 1.65     |
+| 1987 | 27.15          | 24.53          | 18.44             | 30.21                   | 0.00     |
+| 1988 | 28.34          | 19.42          | 22.21             | 29.01                   | 1.02     |
+| 1989 | 24.11          | 18.67          | 21.45             | 32.78                   | 3.00     |
+| 1990 | 22.78          | 17.98          | 25.63             | 33.34                   | 0.27     |
+| 1991 | 26.67          | 16.23          | 23.45             | 34.22                   | 0.43     |
+| 1992 | 28.12          | 15.98          | 25.76             | 33.12                   | 0.02     |
+| 1993 | 24.04          | 14.88          | 26.91             | 36.02                   | 0.15     |
+| 1994 | 16.56          | 13.92          | 27.84             | 36.88                   | 4.80     |
+| 1995 | 18.43          | 10.65          | 29.92             | 37.65                   | 3.35     |
+
+Based on these results, GPT-3.5 Turbo demonstrated a classification accuracy of 80\%, indicating a robust ability to correctly identify the genres compared to my manually coding result from the first 10 articles. This high level of accuracy underscores the model's utility in effectively distinguishing among different narrative styles within a highly specific dataset. The two instances where the model diverged from manual labeling suggest areas for further refinement as it fails to distinguish the story of a collective and a story of an individual. The table below shows the result of the first five articles from 1985.
+
+## Table: Comparison of GPT-Generated and Actual Genres for the First Five Articles of 1985
+
+| Article Title (Shortened)                                                                             | GPT-Generated Genre      | Actual Genre             |
+|-------------------------------------------------------------------------------------------------------|--------------------------|--------------------------|
+| The responsibility of a public service -- a story of Secretary of the Zanhuang county party committee | Individual; No Stats     | Individual, No Stats     |
+| Qili Hu affirms the achievement of Tianjin Daqiu                                                      | Individual; No Stats     | Collective; No Stats     |
+| Collective Effort in Social Security                                                                  | Collective; With Stats   | Collective; With Stats   |
+| What's the new central point in people's service in the new era?                                      | Collective; No Stats     | No Stats                 |
+| Weifang Military District Helps Rural Economic Reform                                                 | Collective; With Stats   | Collective; With Stats   |
+
 
 **RQ2:**
 
-Graph 2 - Tree Map:
 
-This decisioin tree map should show how NLP taks is used to classify articles by the dominant frame using text analysis and categorize based on frequency. Basically it shows the work flow, shedding lights on the results.
-
-Dr Jia's comment: decision tree map can be hard to identify.
-
-Response: Yes probably my intial thoughts were too ideal and naive. However as I put in the method part in previous weeks, this part was conducted through neural networks. I though that myybe I could use ecision trees from Neural Network output to approximate the complex decision surface of a neural network with more interpretable models. 
-
-Graph 3 - Line Chart
-
-It should be able to calculate the annual frequency of each frame from 1979 to 2023 year by year, and different color should represent different frame. Similar to the next graph, this time gives an overall change pattern. However we should notice the difference between proportion and number: as the number of poverty alleviation articles increase per year, the raw number may not be able to reflect the actual intention of the policy makers, nor will it reflect which frame plays a more important role.
-
-Dr Jia's comment: How to measure frame?
-
-Response: Aas mentioned in the big picture assignment, the frames are extracted from UN sustainable development on poverty reductioin and alleviation. We will apply it here.
-
-Graph 4 - Dual Y-Axis Line Graph:
-
-A line graph with two Y-axes to compare the trajectory of two major themes or frames over
-time, highlighting their relative changes or stability. The result, however, need to be based on
-some types of rergrression to show that they are related. Or this can come from variables
-other than existing frames such as the number of articles related to xxx.
-
-Dr Jia's comment: Hypothesis?
-
-Response: We will cover it in the updates before Sunday.
-
-Graph 5 - Chord Graph:
-
-We can hereby use a chord diagram to illustrate the inter-relationships between different
-themes or frames across the entire datase by count co-occurrences of themes in the same
-articles. Each theme is a node on the circumference of a circle, and chords connecting the
-nodes represent the strength of their co-occurren
-
-**RQ3:**
-
-Graph 6 - Bar Graphs for Comparative Analysis:
-
-We then use side-by-side or stacked bar graphs to compare the frequency and type frames used in People's Daily articles against documents on poverty alleviation over the same periods. This visual can effectively show discrepancies and align with trends.
 
 
 ## Requirements
